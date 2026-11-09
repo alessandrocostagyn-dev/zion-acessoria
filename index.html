@@ -1,81 +1,350 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZION ACESSÓRIA - Soluções Automotivas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 40px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }
-        header p {
-            margin: 10px 0 0 0;
-            font-size: 1.2em;
-            color: #ccc;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #e50914;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #b20710;
-        }
-        footer {
-            margin-top: 5px;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101820">
+
+<title>ZION ACESSÓRIA | Soluções Automotivas</title>
+
+<meta name="description" content="ZION ACESSÓRIA. Consultas veiculares, consultas de CPF, proteção veicular e GPS rastreador. Atendimento pelo WhatsApp.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #101820;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background: #080d12;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f5b400;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 480px;
+  padding: 90px 20px;
+  text-align: center;
+  background:
+  linear-gradient(#080d12c9,#080d12e8),
+  url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 48px);
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #f5b400;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #ddd;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f5b400;
+  color: #101820;
+  padding: 14px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 65px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+section h2 span {
+  color: #f5b400;
+}
+
+.intro {
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 35px auto 0;
+}
+
+.service {
+  background: #1b2834;
+  padding: 30px 22px;
+  border-radius: 12px;
+  border: 1px solid #344452;
+}
+
+.service .emoji {
+  font-size: 40px;
+}
+
+.service h3 {
+  color: #f5b400;
+  margin: 15px 0;
+}
+
+.service p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.service a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f5b400;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about {
+  background: #17232e;
+}
+
+.contact {
+  background: #080d12;
+}
+
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 1px solid #455462;
+  border-radius: 6px;
+  background: #1b2834;
+  color: white;
+}
+
+textarea {
+  min-height: 110px;
+}
+
+footer {
+  background: #05090d;
+  text-align: center;
+  padding: 25px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #20c763;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+    gap: 12px;
+  }
+  nav {
+    text-align: center;
+  }
+  nav a {
+    display: inline-block;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>ZION ACESSÓRIA</h1>
-        <p>Soluções Automotivas de Alta Performance</p>
-    </header>
+<header>
+  <div class="logo">ZION ACESSÓRIA</div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-    <div class="container">
-        <h2>O nosso site oficial está a chegar!</h2>
-        <p>Estamos a preparar uma plataforma completa com as melhores soluções, acessórios e serviços automotivos para o seu veículo.</p>
-        <p>Fique atento às novidades ou entre em contacto connosco diretamente.</p>
-        <a href="#" class="cta-button">Falar Connosco</a>
+<main>
+
+<div class="hero" id="inicio">
+  <h1>SOLUÇÕES AUTOMOTIVAS <span>INTELIGENTES</span></h1>
+  <p>
+    Proteção, segurança e informação para você
+    e seu veículo. Conte com a ZION ACESSÓRIA.
+  </p>
+  <a class="btn" href="#servicos">CONHEÇA NOSSOS SERVIÇOS</a>
+</div>
+
+<section id="servicos">
+  <h2>NOSSOS <span>SERVIÇOS</span></h2>
+  <p class="intro">
+    Soluções para quem procura segurança, tranquilidade
+    e informações confiáveis.
+  </p>
+
+  <div class="services">
+
+    <div class="service">
+      <div class="emoji">🔎</div>
+      <h3>Consulta de CPF</h3>
+      <p>Informações cadastrais e relatórios de consulta, mediante autorização e conforme a legislação.</p>
+      <a href="https://wa.me/5562991035879?text=Olá!%20Quero%20informações%20sobre%20consulta%20de%20CPF.">SOLICITAR CONSULTA →</a>
     </div>
 
-    <footer>
-        &copy; 2026 ZION ACESSÓRIA. Todos os direitos reservados.
-    </footer>
+    <div class="service">
+      <div class="emoji">🚘</div>
+      <h3>Consulta Veicular</h3>
+      <p>Informações sobre veículos, débitos e detalhamento de restrições judiciais disponíveis.</p>
+      <a href="https://wa.me/5562991035879?text=Olá!%20Quero%20fazer%20uma%20consulta%20veicular.">CONSULTAR VEÍCULO →</a>
+    </div>
+
+    <div class="service">
+      <div class="emoji">🛡️</div>
+      <h3>Proteção Veicular</h3>
+      <p>Conheça nossas soluções de proteção para carros e motocicletas.</p>
+      <a href="https://wa.me/5562991035879?text=Olá!%20Quero%20uma%20cotação%20de%20proteção%20veicular.">FAZER COTAÇÃO →</a>
+    </div>
+
+    <div class="service">
+      <div class="emoji">📍</div>
+      <h3>GPS Rastreador</h3>
+      <p>Conheça soluções de rastreamento e monitoramento para seu veículo.</p>
+      <a href="https://wa.me/5562991035879?text=Olá!%20Quero%20informações%20sobre%20GPS%20rastreador.">QUERO RASTREADOR →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <h2>SOBRE A <span>ZION ACESSÓRIA</span></h2>
+  <p class="intro">
+    Trabalhamos para oferecer soluções automotivas,
+    atendimento personalizado e praticidade.
+    Nosso compromisso é atender você com transparência,
+    responsabilidade e profissionalismo.
+  </p>
+</section>
+
+<section class="contact" id="contato">
+  <h2>FALE COM A <span>ZION</span></h2>
+  <p class="intro">
+    Preencha seus dados e nossa equipe receberá
+    sua solicitação pelo WhatsApp.
+  </p>
+
+  <form id="contactForm">
+    <input id="nome" placeholder="Seu nome" required>
+    <input id="telefone" type="tel" placeholder="Seu telefone" required>
+
+    <select id="servico" required>
+      <option value="">Selecione um serviço</option>
+      <option>Consulta de CPF</option>
+      <option>Consulta Veicular</option>
+      <option>Proteção Veicular</option>
+      <option>GPS Rastreador</option>
+    </select>
+
+    <textarea id="mensagem" placeholder="Como podemos ajudar?"></textarea>
+
+    <button class="btn" type="submit">
+      ENVIAR SOLICITAÇÃO
+    </button>
+  </form>
+
+  <p>WhatsApp: 62 99103-5879</p>
+  <p>E-mail: zyon.assessoria@gmail.com</p>
+</section>
+
+</main>
+
+<footer>
+  © 2026 ZION ACESSÓRIA – SOLUÇÕES AUTOMOTIVAS.
+  Todos os direitos reservados.
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/5562991035879?text=Olá!%20Vim%20pelo%20site%20da%20ZION.">
+  WhatsApp
+</a>
+
+<script>
+document.getElementById("contactForm")
+.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const telefone = document.getElementById("telefone").value;
+  const servico = document.getElementById("servico").value;
+  const mensagem = document.getElementById("mensagem").value;
+
+  const texto =
+    "Olá! Vim pelo site da ZION ACESSÓRIA.%0A" +
+    "Nome: " + encodeURIComponent(nome) + "%0A" +
+    "Telefone: " + encodeURIComponent(telefone) + "%0A" +
+    "Serviço: " + encodeURIComponent(servico) + "%0A" +
+    "Mensagem: " + encodeURIComponent(mensagem);
+
+  window.open(
+    "https://wa.me/5562991035879?text=" + texto,
+    "_blank"
+  );
+});
+</script>
 
 </body>
 </html>
