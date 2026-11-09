@@ -1,0 +1,75 @@
+
+media: media
+
+content:
+  - name: site
+    label: Conteúdo do site
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero_tag
+        label: Frase de destaque
+        type: string
+      - name: hero_title
+        label: Título principal
+        type: string
+      - name: hero_description
+        label: Texto principal
+        type: text
+      - name: services_title
+        label: Título dos serviços
+        type: string
+      - name: services_description
+        label: Texto dos serviços
+        type: text
+      - name: vehicle_title
+        label: Consulta veicular - título
+        type: string
+      - name: vehicle_description
+        label: Consulta veicular - descrição
+        type: text
+      - name: cpf_title
+        label: Consulta de CPF - título
+        type: string
+      - name: cpf_description
+        label: Consulta de CPF - descrição
+        type: text
+      - name: protection_title
+        label: Proteção veicular - título
+        type: string
+      - name: protection_description
+        label: Proteção veicular - descrição
+        type: text
+      - name: gps_title
+        label: GPS rastreador - título
+        type: string
+      - name: gps_description
+        label: GPS rastreador - descrição
+        type: text
+      - name: about_title
+        label: Título sobre a empresa
+        type: string
+      - name: about_description
+        label: Texto sobre a empresa
+        type: text
+      - name: contact_title
+        label: Título do contato
+        type: string
+      - name: contact_description
+        label: Texto do contato
+        type: text
+      - name: whatsapp
+        label: WhatsApp com DDD e país
+        type: string
+      - name: phone_display
+        label: Telefone para exibição
+        type: string
+      - name: email
+        label: E-mail
+        type: string
+
+settings:
+  content:
+    merge: true
+    
